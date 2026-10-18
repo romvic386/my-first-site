@@ -1,0 +1,47 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	color: #0f172a;
+	background: #f8fafc;
+}
+
+.card {
+	margin-bottom: 24px;
+	padding: 24px;
+	border: 1px solid #e2e8f0;
+	border-radius: 16px;
+	background: white;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.hero-photo {
+	width: 180px;
+	height: 180px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+
+.nav {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+@media (min-width: 768px) {
+	.nav {
+		flex-direction: row;
+	}
+}
+
+.card:hover {
+	transform: translateY(-2px);
+	transition: .2s ease;
+}
